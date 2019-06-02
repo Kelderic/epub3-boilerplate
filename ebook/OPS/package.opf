@@ -64,29 +64,23 @@
 
 
   </metadata><manifest>
-
-
-    <!-- Book -->
+    <!-- Extra Files -->
+    <item media-type="text/css"                 id="css-main"             href="css/main.css"/>
+    <item media-type="image/png"                id="coverimage"           href="images/cover.png" properties="cover-image"/>
+    <!-- Book Beginning -->
     <item media-type="application/xhtml+xml"    id="book-cover"           href="book/cover.xhtml"/>
     <item media-type="application/xhtml+xml"    id="book-toc"             href="book/table-of-contents.xhtml" properties="nav"/>
     <item media-type="application/x-dtbncx+xml" id="book-toc-ncx"         href="book/table-of-contents.ncx"/>
-    <item media-type="application/xhtml+xml"    id="book-content"         href="book/content.xhtml"/>
-
-    <!-- CSS -->
-    <item media-type="text/css"                 id="css-main"             href="css/main.css"/>
-
-    <!-- Images -->
-    <item media-type="image/png"                id="coverimage"           href="images/cover.png" properties="cover-image"/>
-
-
+    <!-- Book Content (add as many chapters as needed) -->
+    <item media-type="application/xhtml+xml"    id="book-chapter1"        href="book/chapter1.xhtml"/>
+    <item media-type="application/xhtml+xml"    id="book-chapter2"        href="book/chapter2.xhtml"/>
+    <item media-type="application/xhtml+xml"    id="book-chapter3"        href="book/chapter3.xhtml"/>
   </manifest>
   <spine toc="book-toc-ncx">
-
-
     <itemref idref="book-cover" linear="no"/>
     <itemref idref="book-toc"/>
-    <itemref idref="book-content"/>
-
-
+    <itemref idref="book-chapter1"/>
+    <itemref idref="book-chapter2"/>
+    <itemref idref="book-chapter3"/>  <!-- (Should match number of chapters in the manifest, above.) -->
   </spine>
 </package>
