@@ -1,7 +1,8 @@
 EPUB 3 Boilerplate
 ==================
 An EPUB 3.0 template (including iBooks display options) to help you get started with your ebook.
-http://git.io/epub3-boilerplate
+
+Forked from https://github.com/reitermarkus/epub3-boilerplate
 
 ---
 
@@ -14,34 +15,20 @@ http://git.io/epub3-boilerplate
       ▪ mimetype
       ▾ OPS/ (Open Publishing Structure)
         ▾ book/
-          ▪ content.xhtml
           ▪ cover.xhtml
-          ▪ title.xhtml
+          ▪ title-and-copyright.xhtml
           ▪ table-of-contents.ncx (only needed for EPUB 2.0 backward-compatibility)
           ▪ table-of-contents.xhtml
+          ▪ chapter1.xhtml
+          ▪ chapter2.xhtml
+          ▪ chapter3.xhtml
+          // more chapters as needed
         ▾ css/
           ▪ style.css
-        ▾ fonts/
-          ▪ fonts.css
-          ▪ someawesomefont.woff
         ▾ images/
           ▪ cover.png
         ▪ package.opf
 
-
 # How To Use
 
-As the author of this template I myself have used it a lot already and everytime I find something new I need in a book, I add it to this template. So, what I suggest you do is you really start fresh, creating a new folder and adding only what you need, otherwise I find it tough to keep track of what you have changed, added or deleted. Have fun coding!
-
-# Installation of Automator Services
-
-To install the Automator services copy them to either `/Library/Services/` or `~/Library/Services/`. For the EpubCheck Service, please install `epubcheck` and `terminal-notifier` with `brew install terminal-notifier epubcheck`.
-
-# Helpful Resources
-
-- [Accessibility Guidelines](http://idpf.org/accessibility/guidelines/nav.php)
-  - [Quality Assurance Checklist](http://idpf.org/accessibility/guidelines/content/qa/qa-checklist.php)
-  - [XHTML Accessibility Guidlines](http://idpf.org/accessibility/guidelines/content/xhtml/nav.php)
-    - [Sectioning your Book (Parts, Chapters, etc.)](http://idpf.org/accessibility/guidelines/content/xhtml/sections.php)
-    - [Creating the Table of Contents Files](http://idpf.org/accessibility/guidelines/content/xhtml/toc.php)
-- [Creating a Read-Aloud iBook with Text-Highlightning](http://futurejones.com/easyepub/tutorials/read-aloud-text-highlighting/)
+This template is designed to be a starting point for an EPUB v3 file. Currently using v3.0, but eventually will be updated to v3.2.
