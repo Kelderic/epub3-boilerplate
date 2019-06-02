@@ -72,11 +72,7 @@
     <item media-type="application/x-dtbncx+xml" id="book-toc-ncx"         href="book/table-of-contents.ncx"/>
     <item media-type="application/xhtml+xml"    id="book-content"         href="book/content.xhtml"/>
 
-    <!-- Fonts -->
-    <item media-type="application/font-woff"    id="font-someawesomefont" href="fonts/someawesomefont.woff"/>
-
     <!-- CSS -->
-    <item media-type="text/css"                 id="css-fonts"            href="fonts/fonts.css"/>
     <item media-type="text/css"                 id="css-main"             href="css/main.css"/>
 
     <!-- Images -->
